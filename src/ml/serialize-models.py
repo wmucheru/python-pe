@@ -24,7 +24,7 @@ def unpickel_model():
 @time_elapsed
 def train_model():
     # Generate regression dataset
-    X, y = make_regression(n_samples=100, n_features=3, noise=0.1, random_state=1)
+    X, y = make_regression(n_samples=100, n_features=2, noise=0.1, random_state=1)
 
     # Train regression model
     linear_model = LinearRegression()
