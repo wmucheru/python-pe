@@ -15,10 +15,9 @@ data = {
 df = pd.DataFrame(data)
 
 export_dir = os.path.dirname(os.path.abspath(__file__))
-print(export_dir)
 
 # CSV
 df.to_csv(f"{export_dir}/dataframe.csv")
 
 # Pickle
-df.to_pickle("./dataframe.pkl")
+df.to_pickle(f"{export_dir}/dataframe.pkl")
