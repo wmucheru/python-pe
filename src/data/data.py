@@ -14,6 +14,10 @@ data = {
 # Create a dataframe
 df = pd.DataFrame(data)
 
+
+rows, columns = df.shape
+print(f"Rows: %d, Columns: %d" % (rows, columns))
+
 export_dir = os.path.dirname(os.path.abspath(__file__))
 
 # CSV
